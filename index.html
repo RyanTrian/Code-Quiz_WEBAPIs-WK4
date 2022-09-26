@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
-    <title>Code Quiz</title>
+    <title>Harry Potter Quiz</title>
 </head>
 
 <body>
@@ -16,10 +16,10 @@
         <h1>Time: <span id="timer"></span></h1>
     </header>
     <!-- start/welcoming interface -->
-    <section class="show">
-        <section id="start-container" class="container">
-            <h2>Coding Quiz Challenge</h2>
-            <p>Try to answer the following code-related questions within the time limit.
+    <section id="start-container" class="show">
+        <section id="start" class="container">
+            <h2>Harry Potter Quiz Challenge</h2>
+            <p>Try to answer the following HarryPotter's first book-related questions within the time limit.
                 Keep in mind that incorrect answers will penalize your score/time by ten seconds!
             </p>
             <button type="button" id="start-quiz" class="btn">Start
@@ -34,8 +34,8 @@
         </div>
     </section>
     <!-- Score Interface -->
-    <section class="hide">
-        <section id="" class="container">
+    <section id="score-container" class="hide">
+        <section class="container">
             <div id="score">
                 <h1>All Done!</h1>
             </div>
@@ -47,7 +47,7 @@
         </section>
     </section>
     <!-- View HighScores-->
-    <section id="" class="hide">
+    <section id="highscore-container" class="hide">
         <div class="container">
             <h1>High Scores</h1>
             <ol id="stored-highscores"></ol>
