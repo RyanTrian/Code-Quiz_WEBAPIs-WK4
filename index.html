@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Code Quiz</title>
+</head>
+
+<body>
+    <!-- view highscore click-event and timer -->
+    <header>
+        <h1 id="view-highscore">View High Scores</h1>
+        <h1>Time: <span id="timer"></span></h1>
+    </header>
+    <!-- start/welcoming interface -->
+    <section class="show">
+        <section id="start-container" class="container">
+            <h2>Coding Quiz Challenge</h2>
+            <p>Try to answer the following code-related questions within the time limit.
+                Keep in mind that incorrect answers will penalize your score/time by ten seconds!
+            </p>
+            <button type="button" id="start-quiz" class="btn">Start
+            </button>
+        </section>
+    </section>
+    <!-- quiz interface -->
+    <section id="question-container" class="hide">
+        <div class="container">
+            <section id="question"></section>
+            <section id="answers"></section>
+        </div>
+    </section>
+    <!-- Score Interface -->
+    <section class="hide">
+        <section id="" class="container">
+            <div id="score">
+                <h1>All Done!</h1>
+            </div>
+            <div id="submission">
+                <label for="initials">Enter initials</label>
+                <input type="text" name="initials" id="initials">
+                <button id="submit-scores" type="submit">Submit</button>
+            </div>
+        </section>
+    </section>
+    <!-- View HighScores-->
+    <section id="" class="hide">
+        <div class="container">
+            <h1>High Scores</h1>
+            <ol id="stored-highscores"></ol>
+            <div>
+                <button id="go-back">Go back</button>
+                <button id="clear-highscores">Clear high scores</button>
+            </div>
+        </div>
+    </section>
+    <!-- Answer Correct -->
+    <section id="correct" class="hide">
+        <p>Correct!</p>
+    </section>
+    <!-- Answer Wrong -->
+    <section id="wrong" class="hide">
+        <p>Wrong :(</p>
+    </section>
+
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>

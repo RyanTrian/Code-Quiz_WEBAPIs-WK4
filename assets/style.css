@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+.show {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    background: ;
+    color: ;
+    padding: 10px;
+    border-radius: 10px;
+    border: ;
+    box-shadow: 0 3px grey;
+    margin-top: 10px;
+}
