@@ -13,6 +13,10 @@ header h1 {
     font-size: 1.5rem;
 }
 
+#view-highscore:hover {
+    cursor: pointer;
+}
+
 .show {
     display: flex;
 }
@@ -24,11 +28,13 @@ header h1 {
 .container {
     display: flex;
     flex-direction: column;
+    width: 80vw
 }
 
 .btn {
     background: ;
     color: ;
+    width: ;
     padding: 10px;
     border-radius: 10px;
     border: ;
