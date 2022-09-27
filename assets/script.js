@@ -14,7 +14,7 @@ const containerScoreEl = document.getElementById("score-container");
 const scoreEl = document.getElementById("score");
 const submissionEl = document.getElementById("submission");
 const initialsInt = document.getElementById("initials");
-const submitBtn = document.getElementById("submit");
+const submitBtn = document.getElementById("submit-score");
 // HighScores List
 const containerHighscore = document.getElementById("highscore-container");
 const highscoresList = document.getElementById("stored-highscores");
@@ -267,13 +267,13 @@ function createHighScores(event) {
 
   //clear previous ordered-list to resort
   while (highscoresList.firstChild) {
-    highscoresList.removeChild(highscoresList.firstChild);
+    highscoresList.removeChild(highscoresList.lastChild);
   }
   //create elements in order of high scores
   for (var i = 0; i < highScores.length; i++) {
     var highscoreEl = document.createElement("li");
     highscoreEl.ClassName = "";
-    highscoreEl.innerHTML = highScores[i].initials + " - " + highScores[i].score;
+    highscoreEl.innerText = highScores[i].initials + " - " + highScores[i].score;
     highscoresList.appendChild(highscoreEl);
   }
 
@@ -300,7 +300,7 @@ function loadHighScore() {
 
   for (var i = 0; i < LoadedHighScores.length; i++) {
     var highscoreEl = document.createElement("li");
-    highscoreEl.ClassName = "high-score";
+    highscoreEl.ClassName = "";
     highscoreEl.innerText =
       LoadedHighScores[i].initials + " - " + LoadedHighScores[i].score;
     highscoresList.appendChild(highscoreEl);
@@ -344,6 +344,6 @@ loadHighScore();
 // Start Click-event
 startBtn.addEventListener("click", startQuiz);
 // submit initials and score
-submitBtn.addEventListener("submit", createHighScores);
+submitBtn.addEventListener("click", createHighScores);
 // View Highscore click Event
 viewHighScoreEl.addEventListener("click", displayHighScores)
