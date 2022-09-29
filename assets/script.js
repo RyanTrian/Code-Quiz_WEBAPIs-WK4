@@ -183,6 +183,7 @@ function displayQuestion(index) {
     var answerbutton = document.createElement("button");
     answerbutton.innerText = index.choices[i].option;
     answerbutton.addEventListener("click", checkAnswer);
+    answerbutton.classList.add("btn", "answer-btn");
     answersEl.appendChild(answerbutton);
   }
 }
@@ -271,7 +272,7 @@ function createHighScores(event) {
   //create elements in order of high scores
   for (var i = 0; i < highScores.length; i++) {
     var highscoreEl = document.createElement("li");
-    highscoreEl.ClassName = "";
+    highscoreEl.className = "highscore";
     highscoreEl.innerText = highScores[i].initials + " - " + highScores[i].score;
     highscoresList.appendChild(highscoreEl);
   }
@@ -299,7 +300,7 @@ function loadHighScore() {
 
   for (var i = 0; i < LoadedHighScores.length; i++) {
     var highscoreEl = document.createElement("li");
-    highscoreEl.ClassName = "";
+    highscoreEl.ClassName = "highscore";
     highscoreEl.innerText =
       LoadedHighScores[i].initials + " - " + LoadedHighScores[i].score;
     highscoresList.appendChild(highscoreEl);
