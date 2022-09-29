@@ -237,8 +237,7 @@ function scoreScreen() {
   if (timeLeft > 40) {
     scoreDisplay.innerText =
       "Your final score is " +
-      timeLeft +
-      "!<br>" +
+      timeLeft + "!\n" + 
       "Glad to meet another Potterhead ⚡";
   } else {
     scoreDisplay.innerText = "Your final score is " + timeLeft + "!";
@@ -340,6 +339,34 @@ function displayHighScores() {
   }
 };
 
+function clearHighScore() {
+  highScores = [];
+  while (highscoresList.firstChild) {
+    highscoresList.removeChild(highscoresList.lastChild);
+  }
+  localStorage.clear();
+}
+
+function showHighScores() {
+  containerHighscore.classList.remove("show");
+  containerHighscore.classList.add("hide");
+  containerStartEl.classList.remove("hide");
+  containerStartEl.classList.add("show");
+  currentQuestionIndex = 0;
+  quizEnd = false;
+  timerEl.textContent = 0;
+  scoreEl.removeChild(scoreEl.lastChild);
+
+  if (isCorrect.className = "show") {
+    isCorrect.classList.remove("show");
+    isCorrect.classList.add("hide");
+  }
+  if (isWrong.className = "hide") {
+    isWrong.classList.remove("show");
+    isWrong.classList.add("hide");
+  }
+}
+
 loadHighScore();
 // Start Click-event
 startBtn.addEventListener("click", startQuiz);
@@ -347,3 +374,7 @@ startBtn.addEventListener("click", startQuiz);
 submitBtn.addEventListener("click", createHighScores);
 // View Highscore click Event
 viewHighScoreEl.addEventListener("click", displayHighScores)
+// Clear High Score button, click event
+clearHighscoresBtn.addEventListener("click", clearHighScore)
+// Go back button, click event
+gobackBtn.addEventListener("click", showHighScores)
