@@ -119,6 +119,7 @@ header h1 {
     }
     .btn {
         font-size: 2rem;
+        width: 100%;
     }
     #start p {
         font-size: 2rem;
