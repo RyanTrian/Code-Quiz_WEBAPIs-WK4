@@ -14,5 +14,5 @@ Have fun! Oh! Try to score over 50 😉
 
 ## Challenges
 
-   1. I chose to write up most of the DOM in HTML. Fortunately, there wasn't many repeated elements, so for this project only, there isn't much advantage differences to create and append the all the elements through JS.
+   1. I chose to write up most of the DOM in HTML. Fortunately, there wasn't many repeated elements, so for this project only, there isn't much advantage to create and append all the elements through JS over what I did.
    2. Divide and visualize the whole project, I need to practice more on this since it took me too much time to finally have my chain of logic down in JS.
