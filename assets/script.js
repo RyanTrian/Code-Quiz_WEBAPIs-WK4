@@ -88,7 +88,7 @@ const quizList = [
       { option: "Knight" },
       { option: "Pawn" },
     ],
-    answer: "Castle1",
+    answer: "Castle",
   },
   {
     question:
@@ -99,7 +99,7 @@ const quizList = [
       { option: "Pig Snout" },
       { option: "Wattlebird" },
     ],
-    answer: "Caput Draconi",
+    answer: "Caput Draconis",
   },
   {
     question:
